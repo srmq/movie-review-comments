@@ -15,8 +15,24 @@
             ],
             "group": {
                 "kind": "build",
-                "isDefault": true
+                //"isDefault": true
+            }
+        },
+        {
+            "label": "cargo test",
+            "type": "shell",
+            "command": "~/.cargo/bin/cargo", // note: full path to the cargo
+            "args": [
+                "test",
+                //"--tools-version",
+                //"v1.37",
+                // "arg1"
+            ],
+            "group": {
+                "kind": "build",
+                //"isDefault": false
             }
         }
+
     ]
 }
