@@ -140,7 +140,7 @@ fi
 # fi
 
 # Install Rust-SBF
-version=v1.37
+version=v1.36
 if [[ $machine == "linux" ]]; then
   machinesbf=linux-x86_64
 else

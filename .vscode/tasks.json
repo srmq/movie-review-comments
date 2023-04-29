@@ -10,7 +10,7 @@
             "args": [
                 "build-sbf",
                 "--tools-version",
-                "v1.37",
+                "v1.36",
                 // "arg1"
             ],
             "group": {
@@ -32,7 +32,21 @@
                 "kind": "build",
                 //"isDefault": false
             }
+        },
+        {
+            "label": "solana deploy",
+            "type": "shell",
+            "command": "~/.local/share/solana/install/active_release/bin/solana", // note: full path to solana
+            "args": [
+                "program",
+                "deploy",
+                "${workspaceFolder}/target/deploy/movie_review_comments.so"
+                // "arg1"
+            ],
+            "group": {
+                "kind": "build",
+                //"isDefault": false
+            }
         }
-
     ]
 }
